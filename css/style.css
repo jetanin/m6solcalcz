@@ -14,7 +14,7 @@ body {
 }
 
 .logo-container {
-    /* position: absolute; */
+    position:static;
     top: 20px;
     left: 20px;
 } 
