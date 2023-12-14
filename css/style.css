@@ -13,10 +13,17 @@ body {
     padding: 10px 20px;
 }
 
+.logo-container {
+    /* position: absolute; */
+    top: 20px;
+    left: 20px;
+} 
+
 .logo {
-    font-size: 24px;
-    font-weight: bold;
+    width: 100px;
+    height: auto;
 }
+
 
 .menu {
     display: flex;
