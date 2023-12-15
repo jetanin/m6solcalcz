@@ -17,11 +17,33 @@ body {
     position:static;
     top: 20px;
     left: 20px;
+    justify-content: center;
+
+    text-align: left;
+    display: flex;
+    background-color: white;
+    color: black;
+    
+    margin: auto;
+    padding: auto;
+    font-weight: bold;
 } 
 
 .logo {
     width: 70px;
-    height: auto;
+    height: 70px;
+}
+.logoName{
+    background-image: linear-gradient(45deg, #f06, #f90, #ff0, #0f6, #06f, #60f, #f06);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: rainbow-animation 5s linear infinite;
+    -webkit-text-stroke: 2px black;
+} 
+@keyframes rainbow-animation {
+    0% { background-position: 0 0; }
+    100% { background-position: 200% 0; }
 }
 
 
@@ -31,6 +53,8 @@ body {
 
 .menu a {
     text-decoration: none;
+    display: flex;
+    flex-direction: column;
     color: #606060;
     padding: 15px;
     font-weight: bold;
