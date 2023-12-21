@@ -73,6 +73,37 @@
             .field ::placeholder{
                 color: transparent;
             }
+
+
+            body{
+                background-color: black;
+            }
+
+            .image{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+            }
+            .welcome{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+
+            max-width: 100%;
+            height: auto;
+            }
+            @media screen and (max-width:600px) {
+                .welcome{
+                    width: 80%;
+                }
+            }
+            @media screen and (max-width:400px){
+                .welcome{
+                    width: 90%;
+                }
+            }
         </style>
 
         <script type="text/javascript" async
@@ -82,7 +113,7 @@
     </head>
 
     <body>
-        <header>
+        <!-- <header>
             Header
         </header>
         <nav>
@@ -96,9 +127,9 @@
         </aside>
         <footer>
             Footer 
-        </footer>
+        </footer> -->
 
-        <br>
+        <!-- <br>
         <h1> Solution Caculator by CyN0Z4</h1>
         <p>hello world</p>
 
@@ -106,18 +137,21 @@
         <br>
         <a href="https://youtube.com" target="_blank">
             <img src="https://e5thsgh6x6c.exactdn.com/wp-content/uploads/2023/10/Cover_camphub.png?strip=all&lossy=1&ssl=1" alt="From Facebook">
-        </a>
-        
+        </a> -->
 
-
-        <div class="field">
-            <input type="text" id="username" placeholder="..."/>
-            <label for="username">Username</label>
+        <div class="image"> 
+            <img src="images/StayFocused.jpg" alt="img" class="welcome">
         </div>
 
 
+        <!-- <div class="field">
+            <input type="text" id="username" placeholder="..."/>
+            <label for="username">Username</label>
+        </div> -->
 
-        <table>
+
+
+        <!-- <table>
             <tr>
                 <th>Firstname</th>
                 <th>Lastname</th>
@@ -185,7 +219,7 @@
         <p>Inline equation: \(\frac{g}{MW} = \frac{MV}{1000}\)</p>
         <p>Display equation: \[\frac{g}{MW} = \frac{MV}{1000}\]</p>
 
-        <button>calculate</button>
+        <button>calculate</button> -->
     </body>
 
 </html>
