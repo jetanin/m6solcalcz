@@ -108,7 +108,17 @@ input[type="submit"]:hover {
     height: 133px;
     width: auto;
     clear: both;
-    position: absolute; 
+    position: absolute;
+}
+@media screen and (max-width:600px) {
+    .welcome{
+        width: 80%;
+    }
+}
+@media screen and (max-width:400px){
+    .welcome{
+        width: 90%;
+    }
 }
 
 /* ------------------------------------------------------------------------------------- */
