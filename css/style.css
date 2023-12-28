@@ -75,6 +75,7 @@ body {
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    background-color: #ccc;
 }
 input[type="text"],
 input[type="password"],
@@ -87,7 +88,7 @@ input[type="submit"] {
 
 input[type="submit"] {
     background-color: #007bff;
-    color: white;
+    color: white;   
     border: none;
     border-radius: 3px;
     cursor: pointer;
@@ -101,10 +102,13 @@ input[type="submit"]:hover {
 /* ---------------------------------------------------------------------------------------- */
 
 .welcome{
-    text-align: center;
-    display: block;
-    margin: 0 auto;
-    
+    /* text-align: center; */
+    /* display: block; */
+    /* margin   : 0 auto; */
+    height: 133px;
+    width: auto;
+    clear: both;
+    position: absolute; 
 }
 
 /* ------------------------------------------------------------------------------------- */
@@ -162,3 +166,5 @@ input[type="submit"]:hover {
     height: 250px;
     padding: 20px;
 }
+
+
