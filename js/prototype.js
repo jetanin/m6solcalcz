@@ -26,17 +26,16 @@ function moveLogo() {
     y += speedY;
 
     const minX = window.innerWidth;
-    const minY = window.innerHeight + 400;
+    const minY = window.innerHeight;
     const maxX = window.innerWidth - SFLogo.clientWidth;
     const maxY = window.innerHeight - (SFLogo.clientHeight + 100);
 
     if (x >= maxX || x <= minX) {
-        speedX *= -1;
+      speedX *= -1;
     }
     if (y >= maxY || y <= minY) {
       speedY *= -1;
-      }
-      
+    }
 
     SFLogo.style.transform = `translate(${x}px, ${y}px)`;
     requestAnimationFrame(moveLogo);
