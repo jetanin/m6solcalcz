@@ -1,21 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Bouncing DVD Logo Screensaver</title>
-    <link rel="stylesheet" href="styles.css">
-    <style>
-        /* Styles for the DVD logo */
-.dvd-logo {
-    position: absolute;
-    width: 700px; /* Adjust the width of the logo */
-    height: auto;
-}
 
-    </style>
-</head>
-<body>
-    <img src="images/StayFocused.jpg" alt="DVD Logo" class="dvd-logo">
-    <script src="script.js"></script>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie-edge">
+        <title>Prototype</title>
+
+        <link rel="stylesheet" href="css/prototype.css">
+        <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mathquill/0.10.1/mathquill.min.css" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathquill/0.10.1/mathquill.min.js"></script>
+
+        <script src="https://kit.fontawesome.com/f30fac2c61.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+        <nav>
+            <div class="header">
+                <div class="logo-container">
+                    <img src="images/logo.jpg" alt="Logo" class="logo">
+                    <h1 class="logoName">CALCULANUIRK</h1>
+                </div>
+            </div>
+                
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="molarity.html">Molarity</a></li>
+                <li><a href="molality.html">Molality</a></li>
+                <li><a href="mol.html">Mol</a></li>
+                <li><a href="dilution.html">Dilution</a></li>
+                <li><a href="login.html" class="btn">Login</a></li>
+            </ul>
+            <div class="icon">
+                <i id = "bar" class="fa-solid fa-bars"></i>
+            </div>
+        </nav>
+        
+
+        <img src="images/StayFocused.jpg" alt="SF" class="SF" id="SFID">
+        <script src="js/main.js"></script>
+    </body>
+
 </html>

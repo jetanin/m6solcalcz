@@ -1,17 +1,32 @@
-"// Your JavaScript Code" 
-const dvdLogo = document.querySelector('.SF');
+// Responsive Nav Bar
+let icon = document.querySelector(".icon");
+let ul = document.querySelector("ul");
+
+icon.addEventListener("click", ()=>{
+  ul.classList.toggle("showData");
+  // console.log(ul);
+  if(ul.className == "showData"){
+    document.getElementById("bar").className="fa-solid fa-xmark"
+  }
+  else{
+    document.getElementById("bar").className="fa-solid fa-bars"
+  }
+})
+
+// Movind and Bouncing
+const SFLogo = document.querySelector('.SF');
 
 let x = 0;
 let y = 0;
-let speedX = 3;
-let speedY = 3;
+let speedX = 1;
+let speedY = 1;
 
 function moveLogo() {
     x += speedX;
     y += speedY;
 
-    const maxX = window.innerWidth - dvdLogo.clientWidth;
-    const maxY = window.innerHeight - dvdLogo.clientHeight;
+    const maxX = window.innerWidth - SFLogo.clientWidth;
+    const maxY = window.innerHeight - (SFLogo.clientHeight + 100);   
 
     if (x >= maxX || x <= 0) {
         speedX *= -1;
@@ -20,7 +35,8 @@ function moveLogo() {
         speedY *= -1;
     }
 
-    dvdLogo.style.transform = `translate(${x}px, ${y}px)`;
+    
+    SFLogo.style.transform = `translate(${x}px, ${y}px)`;
     requestAnimationFrame(moveLogo);
 }
 
