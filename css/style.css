@@ -106,8 +106,163 @@ ul li .btn{
     }
 }
 
+/* ---------------------------------------------------------------------------------------- */
+
+.SF{
+    height: auto;
+    width: 330px;
+    position: absolute;
+}
+@media only screen and (max-width:875px) {
+    .SF{
+        width: 38%;
+    }
+    /* #Molarity_Eq{
+        font-size: 80%;
+    } */
+}
+
 /* ------------------------------------------------------------------------------------- */
 
+#Molarity_Eq{
+    display: block;
+    text-align: center;
+    align-self: auto;
+    background-color: black;
+    color: white;
+    margin: auto;
+}
+#Molarity_Eq .equation {
+    align-self: auto;
+    font-size: larger;
+    display: block;
+    width: 300px;
+    height: 80px;
+    padding: 5px;
+    margin: auto;
+    color: white;
+    font-weight: bolder;
+    background-color: gray;
+    border-radius: 20px;
+    border-style: solid;
+}
+#Molarity_Eq .discription {
+    align-self: auto;
+    display: block;
+    padding: 5px;
+    margin: auto;
+    width: 370px;
+    color: white;
+    background-color: gray;
+    border-radius: 20px;
+    border-style: solid;
+}
+
+#Molality_Eq{
+    display: block;
+    text-align: center;
+    align-self: auto;
+    background-color: black;
+    color: white;
+    margin: auto;
+}
+#Molality_Eq .equation {
+    align-self: auto;
+    font-size: larger;
+    display: block;
+    width: 300px;
+    height: 80px;
+    padding: 5px;
+    margin: auto;
+    color: white;
+    font-weight: bolder;
+    background-color: gray;
+    border-radius: 20px;
+    border-style: solid;
+}
+#Molality_Eq .discription {
+    align-self: auto;
+    display: block;
+    padding: 5px;
+    margin: auto;
+    width: 370px;
+    color: white;
+    background-color: gray;
+    border-radius: 20px;
+    border-style: solid;
+}
+
+#Mol_cal{
+    display: block;
+    text-align: center;
+    align-self: auto;
+    background-color: black;
+    color: white;
+    margin: auto;
+}
+#Mol_cal .equation{
+    align-self: auto;
+    font-size: larger;
+    display: block;
+    width: 400px;
+    height: 80px;
+    padding: 5px;
+    margin: auto;
+    color: white;
+    font-weight: bolder;
+    background-color: gray;
+    border-radius: 20px;
+    border-style: solid;
+}
+#Mol_cal .discription{
+    align-self: auto;
+    display: block;
+    padding: 5px;
+    margin: auto;
+    width: 370px;
+    color: white;
+    background-color: gray;
+    border-radius: 20px;
+    border-style: solid;
+}
+
+#dilution{
+    display: block;
+    text-align: center;
+    align-self: auto;
+    background-color: black;
+    color: white;
+    margin: auto;
+}
+#dilution .equation{
+    align-self: auto;
+    font-size: larger;
+    display: block;
+    width: 250px;
+    height: 60px;
+    padding: 5px;
+    margin: auto;
+    color: white;
+    font-weight: bolder;
+    background-color: gray;
+    border-radius: 20px;
+    border-style: solid;
+}
+#dilution .discription{
+    align-self: auto;
+    display: block;
+    padding: 5px;
+    margin: auto;
+    width: 700px;
+    color: white;
+    background-color: gray;
+    border-radius: 20px;
+    border-style: solid;
+}
+
+
+/* ------------------------------------------------------------------------------------- */
+/* Login */
 .login-container {
     width: 300px;
     margin: 100px auto;
@@ -138,83 +293,3 @@ input[type="submit"]:hover {
     background-color: #0056b3;
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
-
-/* ---------------------------------------------------------------------------------------- */
-
-.SF{
-    height: auto;
-    width: 330px;
-    position: absolute;
-}
-@media only screen and (max-width:875px) {
-    .SF{
-        width: 38%;
-    }
-    /* #Molarity_Eq{
-        font-size: 80%;
-    } */
-}
-
-/* ------------------------------------------------------------------------------------- */
-.equation{
-    align-self: auto;
-    font-size: larger;
-    display: block;
-    width: 300px;
-    height: 80px;
-    padding: 5px;
-    margin: auto;
-    color: white;
-    font-weight: bolder;
-    background-color: gray;
-    border-radius: 20px;
-    border-style: solid;
-}
-.discription{
-    align-self: auto;
-    display: block;
-    padding: 5px;
-    margin: auto;
-    width: 370px;
-    color: white;
-    background-color: gray;
-    border-radius: 20px;
-    border-style: solid;
-}
-
-#Molarity_Eq{
-    display: block;
-    text-align: center;
-    align-self: auto;
-    background-color: black;
-    color: white;
-    margin: auto;
-}
-
-#Molality_Eq{
-    display: block;
-    text-align: center;
-    align-self: auto;
-    background-color: black;
-    color: white;
-    margin: auto;
-}
-
-#Mol_cal{
-    display: block;
-    text-align: center;
-    align-self: auto;
-    background-color: black;
-    color: white;
-    margin: auto;
-}
-
-#dilution{
-    display: block;
-    text-align: center;
-    align-self: auto;
-    background-color: black;
-    color: white;
-    margin: auto;
-}
-
