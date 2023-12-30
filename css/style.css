@@ -142,12 +142,12 @@ input[type="submit"]:hover {
 
 .SF{
     height: auto;
-    width: 100%;
+    width: 330px;
     position: absolute;
 }
 @media only screen and (max-width:875px) {
     .SF{
-        width: 40%;
+        width: 60%;
     }
 }
 
