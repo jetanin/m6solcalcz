@@ -1,15 +1,18 @@
 // Responsive Nav Bar
 let icon = document.querySelector(".icon");
 let ul = document.querySelector("ul");
+let nav_state = 0;
 
 icon.addEventListener("click", ()=>{
   ul.classList.toggle("showData");
   // console.log(ul);
   if(ul.className == "showData"){
     document.getElementById("bar").className="fa-solid fa-xmark"
+    nav_state = 1;
   }
   else{
     document.getElementById("bar").className="fa-solid fa-bars"
+    nav_state = 0;
   }
 })
 
@@ -38,6 +41,14 @@ function moveLogo() {
     
     SFLogo.style.transform = `translate(${x}px, ${y}px)`;
     requestAnimationFrame(moveLogo);
+    console.log(x,y);
+
+    if(nav_state == 1 && y < 280){
+      SFLogo.style.opacity = 0;
+    }
+    else{
+      SFLogo.style.opacity = 100;
+    }
 }
 
 moveLogo();
