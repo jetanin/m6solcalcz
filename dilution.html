@@ -12,26 +12,39 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mathquill/0.10.1/mathquill.min.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mathquill/0.10.1/mathquill.min.js"></script>
+    <script src="https://kit.fontawesome.com/f30fac2c61.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="header">
-        <div class="logo-container">
-            <img src="images/logo.jpg" alt="Logo" class="logo">
+    <nav>
+        <div class="header">
+            <div class="logo-container">
+                <img src="images/logo.jpg" alt="Logo" class="logo">
+                <h1 class="logoName">CALCULANUIRK</h1>
+            </div>
         </div>
-        <div class="menu">
-            <a href="index.html">Home</a>
-            <a href="molarity.html">Molarity</a>
-            <a href="molality.html">Molality</a>
-            <a href="mol.html">Mol Calculator</a>
-            <a href="dilution.html" class="active">Dilution of Solution</a>
+            
+        <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="molarity.html">Molarity</a></li>
+            <li><a href="molality.html">Molality</a></li>
+            <li><a href="mol.html">Mol</a></li>
+            <li><a href="dilution.html">Dilution</a></li>
+            <li><a href="login.html" class="btn">Login</a></li>
+        </ul>
+        <div class="icon">
+            <i id = "bar" class="fa-solid fa-bars"></i>
         </div>
-    </div>
+    </nav>
     
     <div id="dilution">
         <h1>Dilution of Solution</h1>
-        <h1>\[C_1 &times V_1 = C_2 &times V_2\]</h1>
-        <p>C_1 , C_2 : The concentration of the solution before and after dilution, respectively.</p>
-        <p>V_1 , V_2 : The volume of the solution before and after dilution, respectively.</p>
+        <a class="equation">\[C_1 &times V_1 = C_2 &times V_2\]</a>
+        <br>
+        <div class="discription">
+            <p>\[C_1, C_2\] : The concentration of the solution before and after dilution, respectively.</p>
+            <p>\[V_1, V_2\] : The volume of the solution before and after dilution, respectively.</p>
+        </div>
     </div>
+    <script src="js/main.js"></script>
 </body>
 </html>

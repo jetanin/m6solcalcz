@@ -19,6 +19,7 @@ body {
 .logo {
     width: 70px;
     height: 70px;
+    cursor: pointer;
     animation: rotateLogo 7s linear infinite;
 }
 @keyframes rotateLogo {
@@ -149,48 +150,71 @@ input[type="submit"]:hover {
     .SF{
         width: 38%;
     }
+    /* #Molarity_Eq{
+        font-size: 80%;
+    } */
 }
 
 /* ------------------------------------------------------------------------------------- */
+.equation{
+    align-self: auto;
+    font-size: larger;
+    display: block;
+    width: 300px;
+    height: 80px;
+    padding: 5px;
+    margin: auto;
+    color: white;
+    font-weight: bolder;
+    background-color: gray;
+    border-radius: 20px;
+    border-style: solid;
+}
+.discription{
+    align-self: auto;
+    display: block;
+    padding: 5px;
+    margin: auto;
+    width: 370px;
+    color: white;
+    background-color: gray;
+    border-radius: 20px;
+    border-style: solid;
+}
 
 #Molarity_Eq{
+    display: block;
     text-align: center;
     align-self: auto;
     background-color: black;
     color: white;
     margin: auto;
-    width: 700px;
-    height: 400px;
-    padding: 20px;
 }
 
 #Molality_Eq{
+    display: block;
     text-align: center;
+    align-self: auto;
     background-color: black;
     color: white;
     margin: auto;
-    width: 700px;
-    height: 350px;
-    padding: 20px;
 }
 
 #Mol_cal{
+    display: block;
     text-align: center;
+    align-self: auto;
     background-color: black;
     color: white;
     margin: auto;
-    width: 700px;
-    height: 400px;
-    padding: 20px;
 }
 
 #dilution{
+    display: block;
     text-align: center;
+    align-self: auto;
     background-color: black;
     color: white;
     margin: auto;
-    width: 700px;
-    height: 250px;
-    padding: 20px;
 }
 

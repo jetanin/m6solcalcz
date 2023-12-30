@@ -12,28 +12,41 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mathquill/0.10.1/mathquill.min.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mathquill/0.10.1/mathquill.min.js"></script>
+    <script src="https://kit.fontawesome.com/f30fac2c61.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="header">
-        <div class="logo-container">
-            <img src="images/logo.jpg" alt="Logo" class="logo">
+    <nav>
+        <div class="header">
+            <div class="logo-container">
+                <img src="images/logo.jpg" alt="Logo" class="logo">
+                <h1 class="logoName">CALCULANUIRK</h1>
+            </div>
         </div>
-        <div class="menu">
-            <a href="index.html">Home</a>
-            <a href="molarity.html">Molarity</a>
-            <a href="molality.html" class="active">Molality</a>
-            <a href="mol.html">Mol Calculator</a>
-            <a href="dilution.html">Dilution of Solution</a>
+            
+        <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="molarity.html">Molarity</a></li>
+            <li><a href="molality.html">Molality</a></li>
+            <li><a href="mol.html">Mol</a></li>
+            <li><a href="dilution.html">Dilution</a></li>
+            <li><a href="login.html" class="btn">Login</a></li>
+        </ul>
+        <div class="icon">
+            <i id = "bar" class="fa-solid fa-bars"></i>
         </div>
-    </div>
+    </nav>
     
     <div id="Molality_Eq">
         <h1>Molality Equation</h1>
-        <h1>\[m = \frac{W_1}{W_2} = \frac{1000}{MW.}\]</h1>
-        <p>m : Molality (mol/kg)</p>
-        <p>W<sub>1</sub> : Mass of solute (g)</p>
-        <p>W<sub>2</sub> : Mass of solvent (g)</p>
-        <p>MW. : Molecular mass of solute (g)</p>
+        <a class="equation">\[m = \frac{W_1}{W_2} = \frac{1000}{MW.}\]</a>
+        <br>
+        <div class="discription">
+            <p>m : Molality (mol/kg)</p>
+            <p>W<sub>1</sub> : Mass of solute (g)</p>
+            <p>W<sub>2</sub> : Mass of solvent (g)</p>
+            <p>MW. : Molecular mass of solute (g)</p>
+        </div>
     </div>
+    <script src="js/main.js"></script>
 </body>
 </html>
