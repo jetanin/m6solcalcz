@@ -293,3 +293,35 @@ input[type="submit"]:hover {
     background-color: #0056b3;
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
+
+/* ------------------------------------------------------------------------------------- */
+/* Calculate */
+.calculate {
+    width: 500px;
+    margin: 100px auto;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #ccc;
+}
+input[type="number"],
+input[type="Calculate"] {
+    width: 100px;
+    padding: 8px;
+    margin: 5px 0;
+    box-sizing: border-box;
+}
+
+input[type="Calculate"] {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+input[type="Calculate"]:hover {
+    background-color: #0056b3;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}

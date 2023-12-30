@@ -50,6 +50,19 @@
             <p>V : volume (cm<sup>2</sup> or mL)</p>
         </div>
     </div>
+
+    <div class="calculate">
+        <h2>Mass from volume & concentration</h2>
+        <form action="/login" method="post">
+            <label for="Conc">Concentration:</label>
+            <input type="number" id="Conc" name="Conc" required><br>
+            <label for="MW">Formula Weight:</label>
+            <input type="number" id="MW" name="MW" required><br>
+            <label for="V">Volume:</label>
+            <input type="number" id="V" name="V" required><br>
+            <input type="Calculate" value="Calculate">
+        </form>
+    </div>
     <script src="js/main.js"></script>
 </body>
 </html>
