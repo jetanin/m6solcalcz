@@ -158,6 +158,12 @@ ul li .btn{
     border-style: solid;
 }
 
+#Molarity_Eq .calculate{
+    
+}
+
+/* ------------------------------------------------------------------------------------------------------ */
+
 #Molality_Eq{
     display: block;
     text-align: center;
