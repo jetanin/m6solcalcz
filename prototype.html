@@ -40,10 +40,9 @@
     
     <div class = "Contents", id="Molarity_Eq">
         <h1>Molarity Equation</h1>
-        <a class="equation">\[mol = \frac{g}{MW} = \frac{C &times V}{1000}\]</a>
+        <a class="equation">\[\frac{g}{MW} = \frac{C &times V}{1000}\]</a>
         <br>
         <div class="discription">
-            <p>mol : Number of moles of solute (mol)</p>
             <p>g : Mass of solvent (g)</p>
             <p>MW. : Molecular mass of solute (g)</p>
             <p>C : Concentration (mol/dm<sup>3</sup>)</p>
@@ -71,6 +70,27 @@
                 <div id="displayValue">---</div>
         </div>
     </div> 
+    <div class="calculate">
+        <div class="Cal2C">
+            <h2>Concentration from volume & mass</h2>
+                <label for="Conc">Concentration:</label>
+                <input type="number" id="Conc" name="Conc" min="0">
+                <label>mol/dm<sup>3</sup></label>
+                <br>
+                <label for="MW">Formula Weight:</label>
+                <input type="number" id="MW" name="MW" min="0">
+                <label>g/mol</label>
+                <br>
+                <label for="Volume">Volume:</label>
+                <input type="number" id="Volome" name="Volume" min="0">
+                <label>cm<sup>2</sup></label>
+                <br>
+                <br>                
+                <button onclick="Cal2Mass()" class="calBtn">calculate</button>
+                <div id="displayValue">---</div>
+        </div>
+    </div> 
+
     <script src="js/prototype.js"></script>
 </body>
 </html>

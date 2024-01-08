@@ -309,7 +309,16 @@ input[type="submit"]:hover {
 
 /* ------------------------------------------------------------------------------------- */
 /* Calculate */
-.calculate {
+.calculate .Cal2Mass{
+    width: 500px;
+    margin: 100px auto;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #ccc;
+}
+.calculate .Cal2C{
     width: 500px;
     margin: 100px auto;
     text-align: center;
