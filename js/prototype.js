@@ -55,4 +55,17 @@ function moveLogo() {
     }
 }
 
+function Cal2Mass() {
+  let Conc = document.getElementById("Conc").value;
+  console.log(Conc);
+  let MW = document.getElementById("MW").value;
+  console.log(MW);
+  let Volome = document.getElementById("Volome").value;
+  console.log(Volome);
+  let Mass = (MW*Conc*Volome)/1000;
+  console.log(Mass);
+  document.getElementById("displayValue").textContent = Mass;
+}
+
+
 moveLogo();

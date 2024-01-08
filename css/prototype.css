@@ -158,6 +158,19 @@ ul li .btn{
     border-style: solid;
 }
 
+.calBtn {
+    background-color: #04AA6D; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+
+/* ------------------------------------------------------------------------------------------------------ */
+
 #Molality_Eq{
     display: block;
     text-align: center;
@@ -290,6 +303,38 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
+    background-color: #0056b3;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+/* ------------------------------------------------------------------------------------- */
+/* Calculate */
+.calculate {
+    width: 500px;
+    margin: 100px auto;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #ccc;
+}
+input[type="number"],
+input[type="Calculate"] {
+    width: 100px;
+    padding: 8px;
+    margin: 5px 0;
+    box-sizing: border-box;
+}
+
+input[type="Calculate"] {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+input[type="Calculate"]:hover {
     background-color: #0056b3;
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
