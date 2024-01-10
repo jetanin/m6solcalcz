@@ -132,6 +132,14 @@ ul li .btn{
     color: white;
     margin: auto;
 }
+#molarityHeader{
+    color: white;
+    display: block;
+    padding-left: 100px;
+    text-align: left;
+    text-size-adjust: 20px;
+    font-weight: bold;
+}
 #Molarity_Eq .equation {
     align-self: auto;
     font-size: larger;
@@ -170,6 +178,15 @@ ul li .btn{
   }
 
 /* ------------------------------------------------------------------------------------------------------ */
+
+.Contents{
+    background-color: #ccc;
+    background-image: "images/MolarityBG.gif";
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+}
 
 #Molality_Eq{
     display: block;
