@@ -66,15 +66,20 @@
     }
 
     .calculate{
-        width: auto;
+        width: 500px;
         height: auto;
         display: block;
-        margin: 100px auto;
+        margin: 10px auto;
         text-align: center;
         padding: 20px;
         border: 1px solid #ccc;
         border-radius: 5px;
         background-color: #ccc;
+    }
+    @media only screen and (max-width:875px) {
+        .calculate{
+            width: 60%;
+        }
     }
     input[type="number"],
     input[type="Calculate"] {
@@ -117,55 +122,55 @@
             <i id = "bar" class="fa-solid fa-bars"></i>
         </div>
     </nav>
-    
-    <div clsss="Molarity_Eq">
-        <div class="MrHeader"><h1>Molarity Equation</h1></div>
-        <a class="equation">\[\frac{g}{MW} = \frac{C &times V}{1000}\]</a>
-        <br>
-        <div class="discription">
-            <p>g : Mass of solvent (g)</p>
-            <p>MW. : Molecular mass of solute (g)</p>
-            <p>C : Concentration (mol/L)</p>
-            <p>V : volume (cm<sup>3</sup> or mL)</p>
+    <div class="Contents">
+        <div clsss="Molarity_Eq">
+            <div class="MrHeader"><h1>Molarity Equation</h1></div>
+            <a class="equation">\[\frac{g}{MW} = \frac{C &times V}{1000}\]</a>
+            <br>
+            <div class="discription">
+                <p>g : Mass of solvent (g)</p>
+                <p>MW. : Molecular mass of solute (g)</p>
+                <p>C : Concentration (mol/L)</p>
+                <p>V : volume (cm<sup>3</sup> or mL)</p>
+            </div>
+        </div>
+
+        <div class="calculate">
+            <h2>Put Value That You Known</h2>
+            <label for="Mass">Mass:</label>
+            <input type="number" id="Mass" name="Mass" min="0">
+            <label>g</label>
+            <br>
+            <label for="Conc">Concentration:</label>
+            <input type="number" id="Conc" name="Conc" min="0">
+            <label>mol/L</label>
+            <br>
+            <label for="MW">Formula Weight:</label>
+            <input type="number" id="MW" name="MW" min="0">
+            <label>g/mol</label>
+            <br>
+            <label for="Volume">Volume:</label>
+            <input type="number" id="Volome" name="Volume" min="0">
+            <label>cm<sup>3</sup></label>
+            <br>
+            <br>                
+            <button onclick="Cal2Mass()" class="calBtn">Mass</button>
+            <br>
+            <br>
+            <div id="MassVal">---</div>
+            <label>g</label>
+            <br><br>                
+            <button onclick="Cal2C()" class="calBtn">Concentration</button>
+            <br><br>
+            <div id="ConcVal">---</div>
+            <label>mol/L</label>
+            <br><br>                
+            <button onclick="Cal2V()" class="calBtn">Volume</button>
+            <br><br>
+            <div id="VVal">---</div>
+            <label>cm<sup>3</sup></label>
         </div>
     </div>
-
-    <div class="calculate">
-        <h2>Put Value That You Known</h2>
-        <label for="Mass">Mass:</label>
-        <input type="number" id="Mass" name="Mass" min="0">
-        <label>g</label>
-        <br>
-        <label for="Conc">Concentration:</label>
-        <input type="number" id="Conc" name="Conc" min="0">
-        <label>mol/L</label>
-        <br>
-        <label for="MW">Formula Weight:</label>
-        <input type="number" id="MW" name="MW" min="0">
-        <label>g/mol</label>
-        <br>
-        <label for="Volume">Volume:</label>
-        <input type="number" id="Volome" name="Volume" min="0">
-        <label>cm<sup>3</sup></label>
-        <br>
-        <br>                
-        <button onclick="Cal2Mass()" class="calBtn">Mass</button>
-        <br>
-        <br>
-        <div id="MassVal">---</div>
-        <label>g</label>
-        <br><br>                
-        <button onclick="Cal2C()" class="calBtn">Concentration</button>
-        <br><br>
-        <div id="ConcVal">---</div>
-        <label>mol/L</label>
-        <br><br>                
-        <button onclick="Cal2V()" class="calBtn">Volume</button>
-        <br><br>
-        <div id="VVal">---</div>
-        <label>cm<sup>3</sup></label>
-    </div>
-
     <script src="js/molarity.js"></script>
 </body>
 </html>
