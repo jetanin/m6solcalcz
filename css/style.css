@@ -4,7 +4,7 @@
 body {
     margin: 0%;
     padding: 0%;
-    background-color: black;
+    /* background-color: black; */
 }
 
 /* --------------------------------------------------------------------- */
@@ -123,44 +123,6 @@ ul li .btn{
 }
 
 /* ------------------------------------------------------------------------------------- */
-
-#Molarity_Eq{
-    display: block;
-    text-align: center;
-    align-self: auto;
-    background-color: black;
-    color: white;
-    margin: auto;
-}
-#Molarity_Eq .equation {
-    align-self: auto;
-    font-size: larger;
-    display: block;
-    width: 300px;
-    height: 80px;
-    padding: 5px;
-    margin: auto;
-    color: white;
-    font-weight: bolder;
-    background-color: gray;
-    border-radius: 20px;
-    border-style: solid;
-}
-#Molarity_Eq .discription {
-    align-self: auto;
-    display: block;
-    padding: 5px;
-    margin: auto;
-    width: 370px;
-    color: white;
-    background-color: gray;
-    border-radius: 20px;
-    border-style: solid;
-}
-
-#Molarity_Eq .calculate .Cal2Mass{
-    
-}
 
 /* ------------------------------------------------------------------------------------------------------ */
 
@@ -311,7 +273,7 @@ input[type="submit"]:hover {
     border-radius: 5px;
     background-color: #ccc;
 }
-input[type="number"],
+input[type="number"]
 input[type="Calculate"] {
     width: 100px;
     padding: 8px;
@@ -331,3 +293,13 @@ input[type="Calculate"]:hover {
     background-color: #0056b3;
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
+.calBtn {
+    background-color: #04AA6D; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
