@@ -14,6 +14,88 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mathquill/0.10.1/mathquill.min.js"></script>
     <script src="https://kit.fontawesome.com/f30fac2c61.js" crossorigin="anonymous"></script>
 </head>
+<style>
+    .MlHeader{
+        display: block;
+        text-align: center;
+        align-self: auto;
+        background-color: black;
+        color: white;
+        margin: auto;
+        padding: 10px;
+    }
+    .equation {
+        align-self: auto;
+        font-size: larger;
+        display: block;
+        width: 300px;
+        height: 80px;
+        padding: 5px;
+        margin: auto;
+        color: white;
+        font-weight: bolder;
+        background-color: gray;
+        border-radius: 20px;
+        border-style: solid;
+    }
+    .discription {
+        align-self: auto;
+        text-align: left;
+        display: block;
+        padding: 5px;
+        margin: auto;
+        width: 300px;
+        color: white;
+        background-color: gray;
+        border-radius: 20px;
+        border-style: solid;
+    }    
+    .calBtn {
+        background-color: #04AA6D; /* Green */
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+    }
+    .calBtn:hover {
+        box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    }
+
+    .calculate{
+        width: 500px;
+        height: auto;
+        display: block;
+        margin: 10px auto;
+        text-align: center;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background-color: #ccc;
+    }
+    @media only screen and (max-width:875px) {
+        .calculate{
+            width: 60%;
+        }
+    }
+    input[type="number"],
+    input[type="Calculate"] {
+        width: 100px;
+        padding: 8px;
+        margin: 5px 0;
+        box-sizing: border-box;
+    }
+    
+    input[type="Calculate"] {
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 3px;
+        cursor: pointer;
+    }
+</style>
 <body>
     <nav>
         <div class="header">
@@ -26,30 +108,87 @@
         </div>
             
         <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="molarity.html">Molarity</a></li>
-            <li><a href="molality.html" class="active">Molality</a></li>
-            <li><a href="mol.html">Mol</a></li>
-            <li><a href="dilution.html">Dilution</a></li>
-            <li><a href="login.html" class="btn">Login</a></li>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="molarity.html">MOLARITY</a></li>
+            <li><a href="molality.html" class="active">MALALITY</a></li>
+            <li><a href="mol.html">MOL</a></li>
+            <li><a href="dilution.html">DILUTION</a></li>
+            <li><a href="login.html" class="btn">LOGIN</a></li>
         </ul>
         <div class="icon">
             <i id = "bar" class="fa-solid fa-bars"></i>
         </div>
     </nav>
     
-    <div class = "Contents", id="Molality_Eq">
-        <h1>Molality Equation</h1>
-        <a class="equation">\[m = \frac{W_1}{W_2} = \frac{1000}{MW.}\]</a>
-        <br>
-        <div class="discription">
-            <p>m : Molality (mol/kg)</p>
-            <p>W<sub>1</sub> : Mass of solute (g)</p>
-            <p>W<sub>2</sub> : Mass of solvent (g)</p>
-            <p>MW. : Molecular mass of solute (g)</p>
+    <div class = "Contents">
+        <div class="Molality_Eq">
+            <div class="MlHeader"><h1>Molality Equation</h1></div>
+            <a class="equation">\[C = \frac{Mol}{M_2} = \frac{M_1}{M_2} &times \frac{1000}{MW.}\]</a>
+            <br>
+            <div class="discription">
+                <p>&nbsp&nbsp&nbspC (molality) &nbsp: Concentration</p>
+                <p>&nbsp&nbsp&nbsp&nbsp&nbspMol (Mol)&nbsp&nbsp&nbsp: Number of Mol of Solvent </p>
+                <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspM<sub>1</sub> (g) &nbsp&nbsp&nbsp&nbsp&nbsp: Mass of solute</p>
+                <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspM<sub>2</sub> (g) &nbsp&nbsp&nbsp&nbsp&nbsp: Mass of solvent</p>
+                <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbspMW. (g) &nbsp&nbsp&nbsp&nbsp: Molecular Mass of Solute</p>
+            </div>
+        </div>
+
+        <div class="calculate">
+            <h2>Put Value That You Known In The Blank</h2>
+            <label for="Conc">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspConcentration&nbsp&nbsp&nbsp&nbsp:</label>
+            <input type="number" id="Conc" name="Conc" min="0">
+            <label>molality</label>
+            <br>
+
+            <label for="Mol">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspMol&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp:</label>
+            <input type="number" id="Mol" name="Mol" min="0">
+            <label>mol</label>
+            <br>
+
+            <label for="MSl">&nbspMass of Solute&nbsp&nbsp:</label>
+            <input type="number" id="MSl" name="MSl" min="0">
+            <label>g</label>
+            <br>
+            
+            <label for="MSv">&nbspMass of Solvent&nbsp:</label>
+            <input type="number" id="MSv" name="MSv" min="0">
+            <label>g</label>
+            <br>
+
+            <label for="MW">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspFormula Weight&nbsp:</label>
+            <input type="number" id="MW" name="MW" min="0">
+            <label>g/mol</label>
+            <br>
+            <br>  
+            
+            
+            <button onclick="Cal2C()" class="calBtn">Concentration</button>
+            <br>
+            <div id="ConcVal">---</div>
+            <label>molality</label>
+            <br><br>  
+
+            <button onclick="Cal2Mol()" class="calBtn">Mol</button>
+            <br>
+            <div id="MolVal">---</div>
+            <label>Mol</label>
+            <br><br>
+
+            <button onclick="Cal2MSl()" class="calBtn"> Mass of Solute</button>
+            <br>
+            <div id="MSlVal">---</div>
+            <label>g</label>
+            <br><br>
+
+            <button onclick="Cal2MSv()" class="calBtn"> Mass of Solvent</button>
+            <br>
+            <div id="MSvVal">---</div>
+            <label>g</label>
+            <br><br>     
         </div>
     </div>
 
-    <script src="js/main.js"></script>
+    <script src="js/molality.js"></script>
 </body>
 </html>
