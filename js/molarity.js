@@ -49,9 +49,9 @@ function Cal2V() {
   console.log(Mass);
   let MW = document.getElementById("MW").value;
   console.log(MW);
-  let Volome = document.getElementById("Volome").value;
+  let Conc = document.getElementById("Conc").value;
   console.log(Volome);
-  let Conc = ((Mass*1000)/(MW*Volome))
+  let Volome = ((Mass*1000)/(MW*Conc))
   console.log(Conc);
-  document.getElementById("ConcVal").textContent = Conc;
+  document.getElementById("VVal").textContent = Volume;
 }
