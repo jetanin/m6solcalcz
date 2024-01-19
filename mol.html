@@ -9,11 +9,13 @@
             src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
     </script>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mol.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mathquill/0.10.1/mathquill.min.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mathquill/0.10.1/mathquill.min.js"></script>
     <script src="https://kit.fontawesome.com/f30fac2c61.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
     <nav>
         <div class="header">
@@ -38,18 +40,71 @@
         </div>
     </nav>
     
-    <div class = "Contents", id="Mol_cal">
-        <h1>Mol</h1>
-        <a class="equation">\[mol = \frac{g}{MW} = \frac{N}{6.02 &times 10^{23}} = \frac{V}{22.4}\]</a>
+    <div class = "Contents">
+        <div class="MolHeader"><h1>Mol Equation</h1></div>
+        <a class="equation">\[mol = \frac{M}{MW} = \frac{N}{6.02 &times 10^{23}} = \frac{V}{22.4}\]</a>
         <br>
         <div class="discription">
-            <p>mol : Number of moles of solute (mol)</p>
-            <p>g : Mass of solvent (g)</p>
-            <p>MW. : Molecular mass of solute (g)</p>
-            <p>N : number of particles of substance</p>
-            <p>V : Gas quantity (dm<sup>3</sup> or liters at STP)</p>
+            <p>&nbsp&nbsp&nbsp&nbspmol&nbsp&nbsp&nbsp: Number of moles of solute (mol)</p>
+            <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbspM&nbsp&nbsp&nbsp&nbsp: Mass of solvent (g)</p>
+            <p>&nbsp&nbsp&nbsp&nbspMW.&nbsp: Molecular mass of solute (g)</p>
+            <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbspN&nbsp&nbsp&nbsp&nbsp: number of particles of substance</p>
+            <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbspV&nbsp&nbsp&nbsp&nbsp: Gas quantity (dm<sup>3</sup> or liters at STP)</p>
+        </div>
+
+        <div class="calculate">
+            <h2>Put Value That You Known In The Blank Below</h2>
+            <label for="Mol">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspMol&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp:</label>
+            <input type="number" id="Mol" name="Mol" min="0">
+            <label>mol</label>
+            <br>
+
+            <label for="Mass">&nbsp&nbspMass&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp:</label>
+            <input type="number" id="Mass" name="Mass" min="0">
+            <label>g</label>
+            <br>
+
+            <label for="MW">Formula Weight&nbsp&nbsp:</label>
+            <input type="number" id="MW" name="MW" min="0">
+            <label>g/mol</label>
+            <br>
+
+            <label for="N">Number of Particles&nbsp:</label>
+            <input type="number" id="N" name="N" min="0">
+            <label for="N">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label>
+            <br>
+
+            <label for="Volume">&nbsp&nbsp&nbsp&nbsp&nbspVolume&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp:</label>
+            <input type="number" id="Volume" name="Volume" min="0">
+            <label>cm<sup>3</sup></label>
+            <br>
+            <br>   
+
+
+            <button onclick="Cal2Mol()" class="calBtn">Mol</button>
+            <br>
+            <div id="MolVal">---</div>
+            <label>mol</label>
+            <br><br>  
+
+            <button onclick="Cal2M()" class="calBtn">Mass</button>
+            <br>
+            <div id="MassVal">---</div>
+            <label>g</label>
+            <br><br>
+
+            <button onclick="Cal2N()" class="calBtn">Number of Particles</button>
+            <br>
+            <div id="NVal">---</div>
+            <br><br>
+
+            <button onclick="Cal2V()" class="calBtn">Volume</button>
+            <br>
+            <div id="VVal">---</div>
+            <label>cm<sup>3</sup></label>
+            <br><br>       
         </div>
     </div>
-    <script src="js/main.js"></script>
+    <script src="js/mol.js"></script>
 </body>
 </html>

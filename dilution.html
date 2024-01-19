@@ -9,6 +9,7 @@
             src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
     </script>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/dilution.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mathquill/0.10.1/mathquill.min.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mathquill/0.10.1/mathquill.min.js"></script>
@@ -39,14 +40,63 @@
     </nav>
     
     <div class = "Contents", id="dilution">
-        <h1>Dilution of Solution</h1>
+        <div class="DHeader"><h1>Dilution of Solution</h1></div>
         <a class="equation">\[C_1 &times V_1 = C_2 &times V_2\]</a>
         <br>
         <div class="discription">
             <p>\[C_1, C_2\] : The concentration of the solution before and after dilution, respectively.</p>
+            <br>
             <p>\[V_1, V_2\] : The volume of the solution before and after dilution, respectively.</p>
         </div>
+
+        <div class="calculate">
+            <h2>Put Value That You Known In The Blank Below</h2>
+            <label for="C1">&nbsp&nbsp&nbsp&nbsp&nbspC<sub>1</sub>&nbsp:</label>
+            <input type="number" id="C1" name="C1" min="0">
+            <label>Molarity</label>
+            <br>
+
+            <label for="V1">V<sub>1</sub>&nbsp:</label>
+            <input type="number" id="V1" name="V1" min="0">
+            <label>cm<sup>3</sup></label>
+            <br>
+
+            <label for="C2">&nbsp&nbsp&nbsp&nbsp&nbspC<sub>2</sub>&nbsp:</label>
+            <input type="number" id="C2" name="C2" min="0">
+            <label>Molarity</label>
+            <br>
+
+            <label for="V2">V<sub>2</sub>&nbsp:</label>
+            <input type="number" id="V2" name="V2" min="0">
+            <label>cm<sup>3</sup></label>
+            <br><br>  
+
+
+            <button onclick="Cal2C1()" class="calBtn">Concentration Before</button>
+            <br>
+            <div id="C1Val">---</div>
+            <label>Molarity</label>
+            <br><br>  
+
+            <button onclick="Cal2V1()" class="calBtn">Volume Before</button>
+            <br>
+            <div id="V1Val">---</div>
+            <label>cm<sup>3</sup></label>
+            <br><br>
+
+            <button onclick="Cal2C2()" class="calBtn">Concentration After</button>
+            <br>
+            <div id="C2Val">---</div>
+            <label>Molarity</label>
+            <br><br>
+
+            <button onclick="Cal2V2()" class="calBtn">Volume After</button>
+            <br>
+            <div id="V2Val">---</div>
+            <label>cm<sup>3</sup></label>
+            <br><br>       
+        </div>
     </div>
-    <script src="js/main.js"></script>
+    <script src="js/dilution.js"></script>
 </body>
 </html>
