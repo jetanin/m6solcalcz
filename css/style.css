@@ -105,38 +105,3 @@ ul li .btn{
         gap: 22px;
     }
 }
-
-/* ---------------------------------------------------------------------------------------- */
-
-/* ------------------------------------------------------------------------------------- */
-/* Login */
-.login-container {
-    width: 300px;
-    margin: 100px auto;
-    text-align: center;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: #ccc;
-}
-input[type="text"],
-input[type="password"],
-input[type="submit"] {
-    width: 100%;
-    padding: 8px;
-    margin: 5px 0;
-    box-sizing: border-box;
-}
-
-input[type="submit"] {
-    background-color: #007bff;
-    color: white;   
-    border: none;
-    border-radius: 3px;
-    cursor: pointer;
-}
-
-input[type="submit"]:hover {
-    background-color: #0056b3;
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-}
